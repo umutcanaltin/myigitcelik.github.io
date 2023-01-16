@@ -274,18 +274,18 @@ a:hover {
   justify-content: center; 
 }
 .loader-wrapper_like{
-z-index: 9999;
-height: 100%;
-width: 100%;
-overflow: hidden;
-position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
 
-top: 0;
-left: 0;
-background-color: #4267b2;
-display: flex;
-align-items: center;
-justify-content: center; 
+  top: 0;
+  left: 0;
+  background-color: #4267b2;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 .dottet-loader{
   height: 100px;
