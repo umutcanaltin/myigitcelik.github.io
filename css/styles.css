@@ -186,7 +186,9 @@ transform: scale(1.1);
 .bg-opt{
   background-color: #ff5901;
 }
-
+.bg-green{
+  background-color: #8bd450;
+}
 .img-like{
   transition: transform 0.3s;
 }
