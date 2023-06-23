@@ -7,21 +7,47 @@ html {
   scroll-padding-top: 70px; /* height of sticky header */
  
 }
-.banner{
-  background-color: #1d1a2f;
-  padding: 20px 20%;
+.banner {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 50px;
   justify-content: space-between;
+  gap: 50px;
+  padding: 20px 20%;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 40vw;
   margin-bottom: 40px;
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);  
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%); 
+  background-image: linear-gradient(rgba(29, 26, 47, 0.8), rgba(29, 26, 47, 0.8)), url("/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 26, 47, 0.8);
+  opacity: 0.5; /* Adjust the opacity as desired */
+  z-index: -1;
+}
+.main-svg{
+  width: 100%;
+  height: 25vh;
+  margin-top: -180px;
+  background-color: #765898
+}
+.main-svg svg{
+  height: 5vh;
+  width: 100%;
+}
+
+
 
 /* .banner::before{
   content: "";
@@ -91,6 +117,7 @@ background-color: #4267b2;
 .navbar-brand{
   color: #965fd4;
 }
+
 .bg-blue{
 background-color: #965fd4;
 }
