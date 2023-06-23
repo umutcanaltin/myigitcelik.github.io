@@ -3,10 +3,12 @@
 .navbar{
     background-color: #1d1a2f;
 } */
+
 html {
   scroll-padding-top: 70px; /* height of sticky header */
  
 }
+
 .banner {
   position: relative;
   display: flex;
@@ -49,6 +51,16 @@ html {
 }
 
 
+.footer {
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #1d1a2f;
+  color: white;
+  text-align: center;
+}
 
 /* .banner::before{
   content: "";
@@ -522,3 +534,20 @@ justify-content: center;
   }
   
 }
+  /* Set the width and height of the scrollbar track */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Customize the appearance of the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #1d1a2f;
+    border-radius: 0px;
+  }
+
+  /* Customize the appearance of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
