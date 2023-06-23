@@ -36,6 +36,7 @@ html {
   opacity: 0.5; /* Adjust the opacity as desired */
   z-index: -1;
 }
+
 .main-svg{
   width: 100%;
   height: 25vh;
