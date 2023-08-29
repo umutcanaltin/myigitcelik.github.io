@@ -62,6 +62,25 @@ html {
   text-align: center;
 }
 
+.glitch{
+  position: relative;
+  display: inline-block;
+  animation: glitch 1s ease infinite 340ms alternate-reverse;
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+
+  }
+  1% {
+    transform: translate(-2px, 2px)
+  }
+
+  100% {
+    transform: translate(0)
+  }
+}
 /* .banner::before{
   content: "";
   position: absolute;
@@ -125,7 +144,11 @@ background-color: #4267b2;
   color: #8bd450;
 }
 .navbar-logo{
-  transform: scale(0.2);
+  transform: 1;
+  transition: transform 0.5s;
+}
+.navbar-logo:hover{
+  transform: scale(1.2);
 }
 .navbar-brand{
   color: #965fd4;
@@ -352,7 +375,7 @@ a:hover {
 
 
 .typed-text {
-  color: #f8c015;
+  color: #965fd4;
 }
 .cursor {
   display: inline-block;
